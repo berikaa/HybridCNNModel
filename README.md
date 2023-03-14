@@ -1,4 +1,4 @@
-Veri seti orjinal ve sentetik görüntülerden oluşmaktadır./The dataset consists of original and synthetic images.
+Veri seti 12265 adet pataloji görüntüsünden oluşmaktadır. Bu veri setinde bulunan orjinal veriler arttırılarak çoğaltılmıştır. Veri seti orjinal ve sentetik görüntülerden oluşmaktadır./The data set consists of 12265 pathology images. The original data in this data set has been augmented and reproduced. The dataset consists of original and synthetic images.
 
 Klasik CNN Modeli/Classic CNN Model
 ![image](https://user-images.githubusercontent.com/9701895/225024992-4aa8ba83-ba6e-4418-9719-42621b0ae6a2.png)
