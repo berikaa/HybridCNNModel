@@ -47,3 +47,22 @@ print(confusion_matrix(y_test, y_testSVM))
 
 print(classification_report(y_test, y_testSVM))
 print("Accuracy: {0}".format(accuracy_score(y_test, y_testSVM)))
+                     
+#ROC metric for CONVOLUTION+SVM 
+from sklearn.metrics import roc_curve
+from sklearn.metrics import auc
+
+fpr_keras, tpr_keras, thresholds_keras = roc_curve(y_test, y_testSVM)
+
+auc_keras = auc(fpr_keras, tpr_keras)
+
+plt.figure(1)
+plt.plot([0, 1], [0, 1], 'k--')
+plt.plot(fpr_keras, tpr_keras, label='AUC = {:.3f}'.format(auc_keras))
+plt.xlabel('False Positive Rate')
+plt.ylabel('True Positive Rate')
+plt.title('ROC Eğrisi')
+plt.legend(loc='best')
+plt.show()                     
+                     
+                     
