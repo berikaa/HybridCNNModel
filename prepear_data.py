@@ -29,7 +29,7 @@ def create_training_data():
                 pass
      return  training_data
   
-def train_data:      
+def train_data():      
     X = []
     y = []
     for features,label in create_training_data():
@@ -50,11 +50,8 @@ def train_data:
     #or with split
     from sklearn.model_selection import train_test_split
     train_filenames, val_filenames, train_labels, val_labels = train_test_split(X, y, test_size=0.15, random_state=42)
-
-    train_data = tf.data.Dataset.from_tensor_slices((tf.constant(train_filenames), tf.constant(train_labels)))
-    val_data = tf.data.Dataset.from_tensor_slices((tf.constant(val_filenames), tf.constant(val_labels)))
     
-    return train_data, val_data
+    return train_filenames, val_filenames,train_labels,val_labels
 
 def create_test_data():
       test_filenames = []
@@ -70,7 +67,7 @@ def create_test_data():
                 pass
     return test_filenames
 
-def tes_data:
+def tes_data():
   test_data = []
   for features in create_test_data():
       test_data.append(features)
