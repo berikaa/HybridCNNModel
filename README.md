@@ -1,4 +1,4 @@
-# CNN_Model
+Veri seti orjinal ve sentetik görüntülerden oluşmaktadır./The dataset consists of original and synthetic images.
 
 Klasik CNN Modeli/Classic CNN Model
 ![image](https://user-images.githubusercontent.com/9701895/225024992-4aa8ba83-ba6e-4418-9719-42621b0ae6a2.png)
